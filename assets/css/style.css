@@ -48,3 +48,44 @@ body{
 
   white-space: nowrap;
 }
+
+.title-section{
+  background-image: url(../img/banner.jpg);
+  min-height: 750px;
+
+}
+
+.title-wrapper{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  color: white;
+  text-align: center;
+  
+  min-height: 750px;
+}
+
+.title-header{
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.title-text{
+  font-size: 1.4rem;
+  margin-bottom: 100px;
+}
+
+.title-button{
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #e84545;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
