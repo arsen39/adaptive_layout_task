@@ -1,5 +1,5 @@
 @import url(./reset.css);
-@import url(./bootstrap-grid.css);
+/* @import url(./bootstrap-grid.css); */
 
 :root {
   --hover-transition: 0.5s;
@@ -174,9 +174,22 @@ body {
 
 @media (max-width: 576px) {
   .title-wrapper{
-    justify-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
+
+@media (max-width: 425px) {
+  .title-header {
+    font-size: 2rem;
+  }
+
+  .title-text {
+    font-size: 1rem;
+  }
+}
+
+
 
 
 .feature-item-box {
