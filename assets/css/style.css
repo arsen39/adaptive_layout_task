@@ -1,5 +1,4 @@
 @import url(./reset.css);
-/* @import url(./bootstrap-grid.css); */
 
 :root {
   --hover-transition: 0.5s;
@@ -73,8 +72,6 @@ body {
 }
 
 .mobile-nav-img {
-  display: none;
-
   background-color: #e84545;
   padding: 10px;
   max-width: 15px;
