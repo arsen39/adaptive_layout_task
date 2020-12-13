@@ -13,6 +13,7 @@ body {
 }
 
 .page-header {
+  z-index: 2;
   position: fixed;
   display: flex;
   top: 0;
@@ -33,6 +34,10 @@ body {
 .header-logo {
   align-self: center;
   object-fit: cover;
+}
+
+.header-logo-link{
+  align-self: center;
 }
 
 .header-nav {
@@ -208,6 +213,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   overflow: hidden;
+  z-index: 1;
 
   width: 99vw;
 }
@@ -271,4 +277,16 @@ body {
 
 .works-item-box:hover .works-item-img {
   transform: scale(1.3);
+}
+
+@media (max-width: 1024px){
+  .works-item-box{
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px){
+  .works-item-box{
+    width: 100%;
+  }
 }
