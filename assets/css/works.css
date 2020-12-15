@@ -1,0 +1,97 @@
+.works-section {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+  z-index: 1;
+
+  width: 99vw;
+}
+
+.works-item-box {
+  position: relative;
+  width: 25%;
+  height: 350px;
+  object-fit: cover;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.works-item-img {
+  width: 100%;
+  height: 100%;
+  transition: transform var(--hover-transition);
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.works-item-hover-info {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #e8454500;
+  color: transparent;
+
+  transition: background-color var(--hover-transition);
+}
+
+.works-item-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 50px;
+  transition: margin-bottom var(--hover-transition);
+
+  max-width: 95%;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  
+}
+
+.works-item-text{
+  max-width: 95%;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.works-item-box:hover > .works-item-hover-info {
+  background-color: #e84545d7;
+  color: white;
+}
+
+.works-item-box:hover .works-item-header {
+  margin-bottom: 5px;
+}
+
+.works-item-box:hover .works-item-img {
+  transform: scale(1.3);
+}
+
+@media (max-width: 1024px){
+  .works-item-box{
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px){
+  .works-item-box{
+    width: 100%;
+  }
+}

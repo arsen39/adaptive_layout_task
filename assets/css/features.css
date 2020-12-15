@@ -1,0 +1,44 @@
+.feature-item-box {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+
+.features-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.feature-item-icon {
+  max-width: 100%;
+  height: 65px;
+  margin-bottom: 40px;
+
+  object-fit: cover;
+}
+
+.feature-item-header {
+  font-weight: bold;
+  margin-bottom: 15px;
+
+  max-width: 95%;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.feature-item-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  max-width: 95%;
+  max-height: 80px;
+  
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
